@@ -1,3 +1,20 @@
+<div align="center"> <a href="https://fastify.io/">
+    <img
+      src="https://github.com/fastify/graphics/raw/HEAD/fastify-landscape-outlined.svg"
+      width="650"
+      height="auto"
+    />
+  </a>
+</div>
+<div align="center">
+
+[![Node.js](https://img.shields.io/badge/Node.js-16.20-green.svg)](https://nodejs.org/)
+[![Fastify](https://img.shields.io/badge/Fastify-v4.17.0-blue.svg)](https://www.fastify.io/)
+[![Jest](https://img.shields.io/badge/Jest-v29.5.0-red.svg)](https://jestjs.io/)
+[![Clean Code](https://img.shields.io/badge/Clean%20Code-Yes-success.svg)](https://cleancoders.com/)
+[![ECMAScript](https://img.shields.io/badge/ECMAScript-2021-yellow.svg)](https://www.ecma-international.org/)
+
+</div>
 # Desafío agente node
 
 En este desafío, se requiere crear un servidor HTTP y un servidor Websocket que interactúen con el agente Prey instalado en tu computadora.
@@ -12,8 +29,11 @@ El servidor HTTP implementa un endpoint que recibe un JSON con una instrucción.
 
 Para complementar la alerta con información dinámica, se recibe un mensaje desde el equipo hacia el servidor Websocket. Este mensaje contiene un atributo `type` igual a `device_status`. Con esta información, se genera un mensaje similar al siguiente ejemplo:
 
+<div align="center">
+
 ![Ejemplo de alerta](./img/ejemplo-win.png)
 
+</div>
 ### Requisitos implementados
 
 1. Se implementó una estrategia de autenticación básica que verifica los valores de `api_key` y `device_key` almacenados en el archivo prey.conf. Las instrucciones solo se envían al agente si los valores coinciden con los almacenados estáticamente en el código.
@@ -32,8 +52,7 @@ Se utilizaron las siguientes librerías para el desarrollo de la solución:
 La solución cumple con los requisitos del desafío y se han realizado pruebas unitarias para garantizar el correcto funcionamiento de las funcionalidades implementadas.
 
 ## Preparacion ambiente
-
-Seguir las instrucciones del apartado [Requisitos](#requisitos), una vez configurado y habiendo obtenido tu `device_key` y `api_key` debes crear un archivo `.env` en la raiz del proyecto, dicho archico debe contener las siguientes variables:
+Es necesario tener instalado nodejs version 16 en primera instancia y ademas debes seguir las instrucciones del apartado [Requisitos](#requisitos), una vez configurado y habiendo obtenido tu `device_key` y `api_key` debes crear un archivo `.env` en la raiz del proyecto, dicho archico debe contener las siguientes variables:
 
 ``` dotenv
     PORT=4000
@@ -45,7 +64,7 @@ Seguir las instrucciones del apartado [Requisitos](#requisitos), una vez configu
 
 Para esto es necesario ejecutar el comando:
 ``` npm
-npm install
+    npm install
 ``` 
 una vez todo este instalado correctamente solo nos queda inciar nuestra aplicación
 
@@ -53,17 +72,35 @@ una vez todo este instalado correctamente solo nos queda inciar nuestra aplicaci
 
 Para lograrlo solo hay que hacer uso del comando:
 ``` npm
-npm start
+    npm start
 ```
 
 se deberia ver algo similar a esto:
 
+<div align="center">
+
 ![Ejemplo servidor up](./img/ejemplo-server-started.png)
+
+</div>
+<br>
+<br>
+<br>
+
+## License
+<div align="center">
+
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+</div>
+<hr>
+<hr>
+<hr>
 
 <br>
 <br>
 <br>
-<hr>
+<br>
+<br>
+<br>
 
 ## INFORMACION INICIAL PROPORCIONADA!
 
