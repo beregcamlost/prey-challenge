@@ -12,8 +12,9 @@ import moment from 'moment';
  */
 export const timeCalc = (timemilis) => {
   const duration = moment.duration(timemilis);
-  const s = duration.seconds().toString().padStart(2, '0');
-  const m = duration.minutes().toString().padStart(2, '0');
-  const h = duration.hours().toString().padStart(2, '0');
-  return `${s}:${m}:${h}`;
+  const hours = Math.floor(duration.asHours());
+  const minutes = duration.minutes();
+  const seconds = duration.seconds();
+  const formattedTime = `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  return formattedTime;
 };

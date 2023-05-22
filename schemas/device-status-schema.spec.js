@@ -1,5 +1,5 @@
 const Ajv = require('ajv');
-const { deviceStatusSchema } = require('./deviceStatusSchema');
+import deviceStatusSchema from './device-status-schema.js';
 
 describe('deviceStatusSchema', () => {
   let ajv;
